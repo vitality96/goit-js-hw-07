@@ -56,7 +56,9 @@ const onOpenModal = img => {
 
 
 const onKeyPress = event => {
-    if (event.code === "Escape") modalImage.close();
+  if (event.code === "Escape") {
+    modalImage.close();
     console.log("Close modal with Escape");
     document.removeEventListener("keyup", onKeyPress);
+    } 
 };
